@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 struct String
 {
@@ -35,11 +36,6 @@ struct String
 int main()
 {
     String name = "malloc";
-    int i = 0;
-    while(name.name[i] != '\0')
-    {
-        printf("%c", name.name[i]);
-        i++;
-    }
+    printf("%s", name.name);
     printf("\n");
 }
